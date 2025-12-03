@@ -1,4 +1,4 @@
-# DDP ML
+# Distributed Data Parallel Machine Learning
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
@@ -7,9 +7,11 @@ This project is done as an implementation of MPI, OpenMP, and end-to-end machine
 
 This program uses the [wine quality dataset](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009) from UC-Irive Machine Learning. 
 
+for a walkthrough of the code, check out the [powerpoint presentation](https://docs.google.com/presentation/d/1KVtCP7QzkAJUpX0EUnr75AU-cepmenrGgdAyb3Ky7v0/edit?usp=sharing)
+
 # Model
 
-The problem is broken down into a mutliclassification problem, where each wine is categorized into its quality 'group' 0-10. This enables uses a Multinomial Logisitic Regressor; predicting a probability distribution of a wine belonging to a given class.
+The problem is broken down into a mutliclassification problem, where each wine is categorized into its quality 'group' 0-10. This enables using a Multinomial Logisitic Regressor; predicting a probability distribution of a wine belonging to a given class.
 
 $$
 \begin{align}
@@ -38,6 +40,7 @@ $$
 $$
 
 where $\theta$ is the sigmoid function:
+
 $$
 \theta= \frac{e^{x}}{1+e^{x}}
 $$
